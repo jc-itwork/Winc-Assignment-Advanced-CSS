@@ -1,0 +1,55 @@
+@import "./resets";
+@import "./variables";
+@import "./operations";
+
+body {
+    background-color: $primary-color;
+.card {
+    background-color: $text-color;
+    margin: 15px;
+    height: 500px;
+    width: 390px;
+    position: sticky;
+    top: 50%;
+    left: 10%;
+    @include shadowbox;
+    text-align: center;
+
+    .card_text {
+        padding: 0 25px;
+        position: absolute;
+        top: 35px;
+        @include cardtext-style;
+    }
+}
+}
+.card_profile {
+    height: 35%;
+    width: 100%;
+    background-color: $accent-color;
+    position:absolute;
+    bottom: 0;
+
+.card_img {
+   @include testimonialpic;
+    position: relative;
+    bottom: 65px;
+}
+.card_name {
+    color: $text-color;
+    position: relative;
+    bottom: 52px;
+    @include nametag;
+}
+.card_info {
+    position: relative;
+    bottom: 40px;
+    color: $text-color;
+    @include infotag-style;
+}
+}
+
+
+
+
+

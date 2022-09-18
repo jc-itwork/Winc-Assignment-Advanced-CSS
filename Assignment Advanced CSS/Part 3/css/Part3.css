@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #c3cfe2;
+}
+
+.social-media {
+  width: 220px;
+  height: 110px;
+  top: 50%;
+  position: fixed;
+  display: flex;
+  right: -175px;
+  flex-direction: column;
+}
+.social-media .btn i {
+  padding: 1rem;
+  color: #fff;
+  width: 24px;
+  height: 50px;
+  margin-right: 1rem;
+}
+.social-media .btn .blog {
+  background-color: #e17b77;
+}
+.social-media .btn .facebook {
+  background-color: #3b5998;
+}
+.social-media .btn .twitter {
+  background-color: #00aced;
+}
+.social-media .btn .github {
+  background-color: #333;
+}
+.social-media .btn .linkedin {
+  background-color: #007bb6;
+}
+.social-media .btn:hover {
+  transform: translateX(-175px);
+  transition: all 0.5s ease-in-out;
+}
+
+a {
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  text-align: start;
+}/*# sourceMappingURL=Part3.css.map */

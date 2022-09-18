@@ -1,0 +1,52 @@
+@import 'config';
+@import 'variables';
+@import 'utilities';
+
+.social-media {
+    width: $btn-width;
+    height: $btn-height;
+    top: 50%;
+   @include btn-right;
+
+    .btn {
+        
+        i {
+            padding: 1rem;
+            color: #fff;
+            width: 24px;
+            height: 50px;
+            margin-right: 1rem;
+          
+        }
+
+        .blog {
+            background-color: $bg-color;
+        }
+        
+        .facebook {
+            background-color: $fb-color;
+        }
+        
+        .twitter {
+            background-color: $tw-color;
+        }
+        
+        .github {
+            background-color: $gb-color;
+        }
+        
+        .linkedin {
+            background-color: $lnkd-color;
+        }
+    }
+    .btn:hover {
+        @include btn-right-hover;
+    }
+}
+a {
+
+    color: #fff;
+    letter-spacing: .5px;
+    font-size: 14px;
+    text-align: start;
+}

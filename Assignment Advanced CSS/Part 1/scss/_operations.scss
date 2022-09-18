@@ -1,0 +1,42 @@
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+};
+@function size($size-name) {
+    @return map-get($font-sizes, $size-name);
+};
+@function lheight($lheight-name) {
+    @return map-get($line-heights, $lheight-name);
+}
+@mixin testimonialpic {
+    width: 30%;
+    border-radius: 50%;
+    border: 6px #fff solid;
+    box-sizing: content-box;
+    
+}
+@mixin shadowbox {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.16);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+@mixin nametag {
+    font-weight: weight(medium);
+    text-transform:lowercase;
+    font-variant: small-caps;
+    font-size: size(large);
+}
+@mixin infotag-style {
+    color: lighten($accent-color, 20%);
+    font-size: size(medium);
+    font-weight: weight(regular);
+    line-height: lheight(large);
+}
+@mixin cardtext-style {
+    font-size: size(medium);
+    text-align: start;  
+    font-weight: weight(medium);
+    line-height: lheight(large);
+}

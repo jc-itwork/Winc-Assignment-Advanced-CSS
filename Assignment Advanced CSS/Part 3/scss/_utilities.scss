@@ -1,0 +1,11 @@
+@mixin btn-right {
+    position: fixed;
+    display: flex;
+    right: $btn-right-hidden;
+    flex-direction: column;
+}
+
+@mixin btn-right-hover {
+    transform: translateX($btn-right-hidden);
+        transition: all .5s ease-in-out;
+}

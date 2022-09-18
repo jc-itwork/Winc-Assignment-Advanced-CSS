@@ -1,0 +1,68 @@
+@import 'config';
+@import 'variables';
+@import 'utilities';
+
+.gallery-section {
+  background: $primary-color;
+
+  .gallery-images {
+    padding: $standard-padding;
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            .image-section img {
+                height: $standard-height;
+                width: $standard-width;
+                border-radius: $round-corners;
+            }
+        }
+    }
+}
+
+.image-section {
+  position: relative;
+  width: $standard-width;
+
+    &:hover .overlay {
+        opacity: 0.95;
+    }
+}
+
+.image {
+  display: block;
+  width: $standard-width;
+  height: $standard-height;
+}
+
+.overlay {
+  border-radius: $round-corners;
+  @include standard-overlay;
+  @include transition-ease;
+}
+
+
+.text-button {
+  @include white-btn;
+}
+
+@media (max-width: 800px) {
+  .gallery-section .gallery-images {
+    padding: $standard-padding - 30px;
+  
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+   
+}
+}
+
+@media (max-width: 600px) {
+  .gallery-section .gallery-images .gallery {
+    grid-template-columns: repeat(1, 1fr);
+   
+}
+}
